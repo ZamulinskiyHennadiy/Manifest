@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifest</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburgerButton = document.querySelector('.hamburger-button');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburgerButton.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+
+  <header>
+    <img src="image/logo.svg " alt="logo">
+    <nav class="navbar">
+      <div class="hamburger-menu">
+        <button class="hamburger-button" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#start">HOME</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#lp">WORKS</a></li>
+        <li><a href="#silver">ABOUT</a></li>
+        <li><a href="#need">CONTACT</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="/search" method="GET">
+          <input type="text" placeholder="..." name="query" class="search-input">
+          <button type="submit" class="search-button"><img src="image/search.svg"></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="start" id="start">
+      <h1>Manifest is a newborn theme. Clean, simple and fast.</h1>
+      <img src="image/1.png" alt="hero">
+    </section>
+
+    <section class="blog" id="blog">
+      <h2>Blog</h2>
+      <article>
+        <div class="fraction"><img src="image/2.png" alt="arrow"></div>
+        <div class="feaction" id="old">
+          <h6>Technology, Interface Design</h6>
+          <h3>Using UX Design to Build a Sustainable Future</h3>
+          <h6>6 May, 2020</h6>
+          <p>
+            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to
+            use
+            our influence to drive this.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div class="fraction" id="oldsecond">
+          <h6>Technology, Interface Design</h6>
+          <h3>Using UX Design to Build a Sustainable Future</h3>
+          <h6>6 May, 2020</h6>
+          <p>
+            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to
+            use
+            our influence to drive this.
+          </p>
+        </div>
+        <div class="fraction"><img src="image/3.png" alt="litle-hero"></div>
+      </article>
+
+      <div class="lp" id="lp">
+        <h4>Latest Posts</h4>
+        <h6><a href="">View All</a></h6>
+      </div>
+
+      <article>
+        <div class="big">
+          <div class="silver">
+            <img src="image/4.png" alt="lamp">
+            <div class="text-column">
+              <div class="alisa">
+                <span>Interface Design</span>
+                <span>8 June, 2020</span>
+              </div>
+
+              <h3><a href="">UX traffic light colours</a></h3>
+              <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
+          </div>
+
+          <div class="silver" id="silver">
+            <img src="image/5.png" alt="small-arrow">
+            <div class="text-column">
+              <div class="alisa">
+                <span>Technology</span>
+                <span>6 May, 2020</span>
+              </div>
+              <h3><a href="">Using UX Design to Build a Sustainable Future</a></h3>
+              <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
+          </div>
+
+          <div class="silver">
+            <img src="image/6.png" alt="house">
+            <div class="text-column">
+              <div class="alisa">
+                <span>Visual Design</span>
+                <span>8 June, 2020</span>
+              </div>
+              <h3><a href="">Creativity vs. UX</a></h3>
+              <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="lp">
+        <h4>The Most Popular</h4>
+        <h6><a href="">View All</a></h6>
+      </div>
+
+      <article>
+        <div class="last-big">
+          <div class="last-fraction">
+            <img src="image/7.png" alt="big-lamp">
+            <div class="alisa">
+              <span>Interface Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h3>Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+            <p>
+              LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce
+              and as we
+              learned — diversity and success go hand in hand
+            </p>
+          </div>
+
+          <div class="last-fraction">
+            <img src="image/8.png" alt="strit">
+            <div class="alisa">
+              <span>Visual Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h3>Creativity vs. UX</h3>
+            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+          </div>
+        </div>
+      </article>
+
+      <button class="load">Load More</button>
+
+      <article class="add">
+        <div class="container">
+          <h3>Full-time UI/UX designer</h3>
+          <a href="https://veronalabs.com/">Head of Design at VeronaLabs.com</a>
+        </div>
+        <div class="container">
+          <p>We work with clients around the world from our headquarters in Charleston, South Carolina.</p>
+          <p>We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="need" id="need">
+      <div>
+        <h2>Need a project?</h2>
+        <h6>(239) 555-0108</h6>
+        <a href="https://en.wikipedia.org/wiki/Zhytomyr">tanya.hill@example.com</a>
+      </div>
+      <div class="social">
+        <svg>
+          <use xlink:href="image/instagram-icon.svg#instagram"></use>
+        </svg>
+        <svg>
+          <use xlink:href="image/facebook-icon.svg#facebook"></use>
+        </svg>
+        <svg>
+          <use xlink:href="image/github-icon.svg#github"></use>
+        </svg>
+        <svg>
+          <use xlink:href="image/dribbble-icon.svg#dribbble"></use>
+        </svg>
+        <svg>
+          <use xlink:href="image/twitter-icon.svg#twitter"></use>
+        </svg>
+      </div>
+    </div>
+    <h6>© Copyright Manifest Theme. All rights reserved</h6>
+  </footer>
+</body>
+
+</html>
